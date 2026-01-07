@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan | Ahmad & Aisyah</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Opening Page ===== -->
+<section class="opening" id="opening">
+  <div class="overlay">
+    <h1 class="script">Ahmad & Aisyah</h1>
+    <p>Akan Melangsungkan Pernikahan</p>
+    <button id="openInvitation">Buka Undangan</button>
+  </div>
+</section>
+
+<audio id="bgMusic" loop>
+  <source src="assets/music/wedding.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ===== Main Content ===== -->
+<main id="content" class="hidden">
+
+<!-- ===== Home ===== -->
+<section class="home">
+  <img src="assets/images/cover.jpg" class="main-photo">
+  <h2 class="script">Ahmad & Aisyah</h2>
+  <p class="date">Minggu, 21 Juli 2026</p>
+  <blockquote>
+    “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup…”
+    <br><small>(QS. Ar-Rum: 21)</small>
+  </blockquote>
+</section>
+
+<!-- ===== Bride & Groom ===== -->
+<section class="couple">
+  <div class="person">
+    <img src="assets/images/groom.jpg">
+    <h3>Ahmad Fauzi, S.Pd</h3>
+    <p>Putra dari<br>Bapak Abdullah & Ibu Siti Aminah</p>
+  </div>
+  <div class="person">
+    <img src="assets/images/bride.jpg">
+    <h3>Aisyah Rahmawati, S.Pd</h3>
+    <p>Putri dari<br>Bapak Hasan & Ibu Khadijah</p>
+  </div>
+</section>
+
+<!-- ===== Event ===== -->
+<section class="event">
+  <h2>Acara Pernikahan</h2>
+
+  <div class="event-box">
+    <h3>Akad Nikah</h3>
+    <p>🗓 Minggu, 21 Juli 2026</p>
+    <p>⏰ 08.00 WIB</p>
+    <p>📍 Masjid Agung Al-Hikmah</p>
+  </div>
+
+  <div class="event-box">
+    <h3>Resepsi</h3>
+    <p>🗓 Minggu, 21 Juli 2026</p>
+    <p>⏰ 11.00 – 14.00 WIB</p>
+    <p>📍 Gedung Serbaguna Harmoni</p>
+  </div>
+
+  <div id="countdown"></div>
+</section>
+
+<!-- ===== Location ===== -->
+<section class="location">
+  <h2>Lokasi Acara</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=Jakarta&output=embed"
+    loading="lazy">
+  </iframe>
+  <a href="https://maps.google.com" target="_blank" class="btn">Buka di Google Maps</a>
+</section>
+
+<!-- ===== Our Story ===== -->
+<section class="story">
+  <h2>Our Story</h2>
+  <ul>
+    <li><strong>2019</strong> – Pertemuan pertama</li>
+    <li><strong>2021</strong> – Menjalin hubungan serius</li>
+    <li><strong>2026</strong> – Menikah</li>
+  </ul>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section class="gallery">
+  <h2>Galeri</h2>
+  <div class="grid">
+    <img src="assets/images/gallery1.jpg">
+    <img src="assets/images/gallery2.jpg">
+    <img src="assets/images/gallery3.jpg">
+  </div>
+</section>
+
+<!-- ===== RSVP ===== -->
+<section class="rsvp">
+  <h2>Konfirmasi Kehadiran</h2>
+  <form id="rsvpForm">
+    <input type="text" placeholder="Nama" required>
+    <input type="number" placeholder="Jumlah Tamu" required>
+    <textarea placeholder="Pesan"></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+</section>
+
+<!-- ===== Wedding Gift ===== -->
+<section class="gift">
+  <h2>Wedding Gift</h2>
+  <p>BCA - 1234567890 a.n Ahmad Fauzi</p>
+  <button onclick="copyText('1234567890')">Salin Nomor Rekening</button>
+</section>
+
+<!-- ===== Wishes ===== -->
+<section class="wishes">
+  <h2>Ucapan & Doa</h2>
+  <form id="wishForm">
+    <input type="text" placeholder="Nama" required>
+    <textarea placeholder="Ucapan"></textarea>
+    <button>Kirim</button>
+  </form>
+  <div id="wishList"></div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <p>Terima kasih atas doa dan restunya</p>
+  <h3 class="script">Ahmad & Aisyah</h3>
+  <small>© 2026</small>
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
