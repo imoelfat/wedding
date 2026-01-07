@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffaf3;
+  color: #444;
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Opening */
+.opening {
+  height: 100vh;
+  background: url('assets/images/cover.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(255,255,255,0.85);
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background: #c9a24d;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.main-photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.couple {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.person img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.event-box {
+  margin: 20px auto;
+}
+
+#countdown {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  border: none;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background: #f3e9d2;
+  padding: 30px;
+}
